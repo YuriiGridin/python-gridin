@@ -26,8 +26,12 @@ jobs:
 
       - name: Build project
         run: |
-          python app.py --0.0.0.0 --5000 build
+          python app.py --0.0.0.0 --5000
 
       - name: Adds default product data to the database.
         run:
-          python db.py -a  # Run unit tests
+          python db.py -a  
+
+      - name: Prints all product data to the console.
+        run:
+          python db.py -p  
