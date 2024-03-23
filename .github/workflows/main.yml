@@ -26,14 +26,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt  # Download dependencies
 
-      - name: First prints all product data to the console.
-        run:
-          python db.py -p 
-
-      # - name: Build project
-      #   run: |
-      #     python app.py --host 0.0.0.0 --port 5000
-
       - name: Adds default product data to the database.
         run:
           python db.py -a  
