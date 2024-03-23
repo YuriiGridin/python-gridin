@@ -26,7 +26,7 @@ jobs:
 
       - name: Build project
         run: |
-          python app.py --host 0.0.0.0 --port 5000
+          python app.py --host 0.0.0.0 --port 5000 build
 
       - name: Adds default product data to the database.
         run:
