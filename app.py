@@ -14,7 +14,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "*"}})
 api = Api(app)
 
-
+# Test branche
 # Define the resources
 class Products(Resource):
     def get(self):
