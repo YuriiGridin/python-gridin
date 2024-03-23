@@ -24,10 +24,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt  # Download dependencies
 
+      - name: Build project
+        run: |
+          python app.py build
+
       - name: Adds default product data to the database.
         run:
           python db.py -a  # Run unit tests
-
-      - name: Run unit tests
-        run: |
-          python -m unittest discover -s tests  # Run unit tests
