@@ -32,4 +32,8 @@ jobs:
 
       - name: Prints all product data to the console.
         run:
-          python db.py -p  
+          python db.py -p 
+
+      - name: Run tests.
+        run:
+          python unit_tests.py  
