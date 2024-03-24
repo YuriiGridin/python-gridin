@@ -27,13 +27,14 @@ jobs:
           pip install -r requirements.txt  # Download dependencies
 
       - name: Adds default product data to the database.
-        run:
+        run: |
           python db.py -a  
 
       - name: Prints all product data to the console.
-        run:
+        run: |
           python db.py -p 
 
       - name: Run tests.
-        run:
-          python unit_tests.py  
+        run: |
+          # python unit_tests.py  
+          unittest
