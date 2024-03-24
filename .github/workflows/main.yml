@@ -36,5 +36,5 @@ jobs:
 
       - name: Run tests.
         run: |
-          # python unit_tests.py  
-          unittest
+          python unit_tests.py  
+          # unittest
